@@ -1,0 +1,294 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #86bcbe), color-stop(35%, #84bafd), to(rgb(60, 60, 212)));
+  background-image: linear-gradient(to right, #86bcbe 20%, #84bafd 35%, rgb(60, 60, 212));
+}
+.wrapper .container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 992px) {
+  .wrapper .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.wrapper .container .picture {
+  margin: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+@media only screen and (max-width: 992px) {
+  .wrapper .container .picture {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.wrapper .container .picture img {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .wrapper .container .picture img {
+    width: 95%;
+  }
+}
+.wrapper .container .content {
+  padding: 20px 20px 20px 65px;
+  width: 100%;
+  margin: 0px 10px 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .wrapper .container .content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.wrapper .container .content h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  color: white;
+}
+.wrapper .container .content p {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  color: #ffffff;
+  line-height: 22px;
+}
+.wrapper .container .content a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: blueviolet;
+  background-color: white;
+  width: 150px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  border-radius: 15px;
+}
+
+.team {
+  padding: 120px 20px;
+  background-color: rgb(245, 239, 232);
+}
+.team .container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+.team h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.team .doctor-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.team .doctor-section .hold {
+  border: none;
+}
+.team .doctor-section .hold img {
+  margin-bottom: 50px;
+}
+.team .doctor-section .hold h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .team .doctor-section .hold h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section .hold h2 {
+    font-size: 35px;
+  }
+}
+.team .doctor-section .hold p {
+  text-align: center;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .team .doctor-section .hold p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section .hold p {
+    font-size: 20px;
+  }
+}
+.team .doctor-section .one {
+  border: 1px solid black;
+  width: 33.33%;
+  padding: 50px 10px;
+  margin: 0 10px;
+  background-color: white;
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section .one {
+    width: 70%;
+    margin: 10px 0;
+  }
+}
+.team .doctor-section .one:hover {
+  background-color: aqua;
+}
+.team .doctor-section .two {
+  border: 1px solid black;
+  width: 33.33%;
+  padding: 50px 10px;
+  margin: 0 10px;
+  background-color: white;
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section .two {
+    width: 70%;
+    margin: 10px 0;
+  }
+}
+.team .doctor-section .two:hover {
+  background-color: aqua;
+}
+.team .doctor-section .three {
+  border: 1px solid black;
+  width: 33.33%;
+  padding: 50px 10px;
+  margin: 0 10px;
+  background-color: white;
+}
+@media only screen and (max-width: 776px) {
+  .team .doctor-section .three {
+    width: 70%;
+    margin: 10px 0;
+  }
+}
+.team .doctor-section .three:hover {
+  background-color: aqua;
+}
+
+.about-section {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0px 0px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blueviolet;
+  color: white;
+}
+.about-section .container {
+  max-width: 1270px;
+  margin: 50px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-section .about {
+  margin: 0 70px 0 10px;
+}
+.about-section .about h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about-section .about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-section .about li::before {
+  content: "✔ ";
+  margin-right: 8px;
+  color: white;
+}
+.about-section .about li {
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 680px) {
+  .about-section .about li {
+    font-size: 15px;
+  }
+}
+.about-section .pic {
+  width: 40%;
+  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 880px) {
+  .about-section .pic {
+    display: none;
+  }
+}
